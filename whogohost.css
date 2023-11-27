@@ -1,0 +1,621 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    background-color: rgb(249, 248, 248);
+}
+
+nav{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 100px;
+    background-color: rgb(6, 19, 117);
+    /* font-family: Arial, Helvetica, sans-serif; */
+    
+}
+nav span{
+    margin: 0 10px;
+    font-size: 14px;
+}
+nav li{
+    display: inline-block;
+}
+nav img{
+    width: 10px;
+    height: 10px;
+}
+
+nav button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    color: #fff;
+}
+
+nav button:focus-within .dropdown{
+    display: block;
+}
+
+.dropdown{
+    position: absolute;
+    top: 20px;
+    color: rgb(35, 35, 243);
+    background-color: #fff;
+    width: 150px;
+    text-align: start;
+    padding: 20px ;
+    display: none;
+}
+
+.dropdown li{
+    display: block;
+    line-height: 20px;
+}
+
+
+.secondNav{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding:0 110px  0 100px;
+    background-color: rgb(27, 47, 199);
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid lightgrey;
+}
+.secondNav img{
+    width: 120px;
+}
+
+.secondNav span{
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.secondNav .dropdown2{
+    position: absolute;
+    padding: 30px 0;
+    left: 0;
+    top: 115px;
+    width: 100%;
+    background-color: #fff;
+    height: 300px;
+    display: none;
+}
+
+.dropdown2 img{
+    width: 50px;
+}
+
+.secondNav button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.secondNav button:focus-within .dropdown2{
+    display: block;
+}
+
+.sideNav{
+    display: none;
+}
+
+.sideNav button{
+    font-size:xx-large;
+    border: 1px solid grey;
+    color: lightgray;
+    padding: 3px;
+    border-radius: 3px;
+}
+.motherDiv{
+    background-color: rgb(27, 47, 199);
+    text-align: center;
+    height: 700px;
+
+}
+
+.firstContent{
+    /* border: 1px solid #fff; */
+    width: 89%;
+    padding:100px 0;
+    margin: 0 auto;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.firstContent a, p{
+    color: #fff;
+    font-weight:bold;
+}
+
+
+.firstContent h2{
+    font-size:47px;
+}
+
+.inputDiv{
+    justify-content: center;
+    width: 80%;
+    margin: 100px auto;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+
+.inputDiv input{
+    width: 90%;
+    background-color: transparent;
+    height: 45px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.inputDiv input::placeholder{
+    color: lightgrey;
+}
+
+.flex{
+    position: absolute;
+    top: 670px;
+    display: flex;
+    padding: 20px 50px;
+    /* border: 3px solid red; */
+    /* width: 80%; */
+    margin: auto;
+}
+
+.flex p{
+    color: rgb(249, 89, 89);
+}
+
+.flex div{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+    margin: 0 15px;
+    padding: 15px;
+    width: 280px;
+    height: 280px;
+    border-radius: 6px;
+    background-color: white;
+}
+.flex h3,p,small,button{
+    margin: 20px 0;
+}
+.flex small{
+    font-size:14px;
+
+}
+
+.flex button{
+    background: transparent;
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.flex button:hover{
+    background-color:rgb(0, 147, 221) ;
+    border: none;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.secContent{
+    margin-top: 250px;
+    
+}
+
+.semiDiv{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.semiDiv h2{
+    color: rgb(9, 27, 165);
+    padding: 30px 0;
+}
+
+.secContent img{
+    width: 100px;
+    height: 100px;
+    margin: 0 25px;
+}
+
+.thirdContent{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.mainDiv{
+    text-align: center;
+    margin: 100px 0;
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.chooseWhogohost{
+    width: 80%;
+    margin: auto;
+}
+
+.chooseWhogohost p{
+    color: black;
+    font-weight: lighter;
+    font-size: small;
+    line-height: 25px;
+    /* word-spacing: 5px; */
+    text-indent: 5px;
+}
+
+.fourthSection, .fifthSection{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.fourthSection p{
+    color: black;
+    font-weight: lighter;
+    line-height: 30px;
+    font-size: large;
+}
+
+.fourthSection button{
+    background-color: rgb(16, 122, 236);
+    color: #fff;
+    height: 45px;
+    padding: 10px 30px;
+    width: 320px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.fourthSection button:hover{
+    background-color: rgb(0, 105, 217);
+}
+.randomImg img{
+    width: 500px;
+}
+
+.white{
+    background-color: #fff;
+
+}
+
+.fifthSection{
+    margin: 100px auto;
+    padding: 50px 0;
+}
+
+.fifthSection p{
+    color: black;
+    font-weight: lighter;
+    line-height: 30px;
+}
+.fifthSection h1{
+    color: rgb(9, 27, 165);
+}
+
+.fifthSection button{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 15px 20px;
+    font-size: medium;
+    margin: 0 10px;
+}
+
+.fifthSection button:hover{
+    background-color: rgb(7, 21, 126);
+    color: #fff;
+    transition: 0.5s ease;
+    border: none;
+}
+
+.black{
+    background-color: rgb(16, 15, 15);
+    color: #fff;
+    padding: 80px 0;
+}
+
+.insideDiv{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.asidesDiv{
+    display: flex;
+    align-items: center;
+}
+
+
+.insideDiv aside{
+    margin: 0 10px;
+}
+
+.insideDiv button{
+    padding: 15px 22px;
+    background-color:#fff ;
+    border-radius: 5px;
+    font-size: medium;
+    color: grey;
+    border: none;
+}
+
+.insideDiv input{
+    padding: 15px 20px;
+    background-color:transparent ;
+    border-radius: 5px;
+    font-size: medium;
+    color: grey;
+    border: 1px solid #fff;
+}
+
+.asidesDiv p{
+    font-weight: lighter;
+    line-height: 10px;
+}
+
+
+.lastContent{
+
+    display: flex;
+    width: 90%;
+    margin:40px auto;
+    padding: 30px;
+}
+
+.lastContent aside{
+    width: 300px;
+    /* border: 1px solid #fff; */
+    margin: 0 10px;
+    padding: 0 20px 0 0;
+
+}
+
+.lastContent li{
+    line-height: 25px;
+    display: block;
+    font-size: small;
+}
+
+.lastContent i{
+    font-size: 30px;
+    margin: 0 3px;
+}
+
+.lastContent button{
+    border-radius: 6px;
+    border: none;
+    padding: 5px;
+}
+
+footer{
+    border-top: 1px solid white;
+    
+    
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.foot p{
+    font-weight: lighter;
+}
+.foot span{
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+/* .sideNav{
+    display: none;
+} */
+
+.reduce{
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(27, 47, 199);
+    height: 400px;
+    left: 0;
+    top: 110px;
+    text-align: start;
+    padding: 10px;
+    display: none;
+}   
+
+/* MEDIA QUERY */
+
+@media (max-width:1120px) {
+    nav span{
+        display: none;
+    }
+    nav button, li{
+        margin: 0 5px;
+    }
+}
+
+/* .reduce{
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(27, 47, 199);
+    height: 400px;
+    left: 0;
+    top: 110px;
+    text-align: start;
+    padding: 10px;
+    display: none;
+} */
+
+@media (max-width:880px) {
+    nav{
+        padding: 0 20px;
+        align-items: center;
+    }
+    nav div{
+        width: 25%;
+    }
+    nav button{
+        margin:0 5px;
+        width: 10px;
+    }
+
+    .hold:focus-within .reduce{
+        display: block;
+        /* transition: 0.5s ease;
+        transition-duration: o.5s; */
+    }
+   
+    .cont{
+        display: none;
+    }
+
+    .sideNav{
+        display: block;
+        font-size: 16px;
+    }
+    .sideNav button{
+        width: fit-content;
+    }
+ 
+    .sideNavContent{
+        position: absolute;
+        top: 200px;
+    }
+
+    .sideDrops{
+        position: absolute;
+    }
+
+    .flex {
+       display: block;
+       width: 100%;
+       position: relative;
+       top: 0;
+    }
+    .flex div{
+        margin: 10px auto;
+        width: 70%;
+    }
+
+    .semiDiv div{
+        width: 100%;
+        padding: 0 50px;
+    }
+    .secContent img{
+        width: 16%;
+        margin: 0 ;
+    }
+
+    .thirdContent{
+        width: 100%;
+        display: block;
+    }
+
+    .thirdContent .chooseWhogohost{
+        margin: 50px auto;
+
+        width: 60%;
+    }
+
+    .fourthSection, .fifthSection{
+        display: block;
+    }
+
+    .fourthSection div, .fifthSection div{
+        margin: 20px 0;
+    }
+    .randomImg img{
+        width:80% ;
+    }
+
+    .insideDiv{
+        display: block;
+        text-align: center;
+    }
+    .asidesDiv{
+        display: block;
+    }
+
+    .asidesDiv input, button{
+        width: 40%;
+    }
+    .lastContent{
+        display: none;
+    }
+   .foot{
+    width: 100%;
+    display: block;
+    text-align: start;
+    padding: 0 10px;
+   }
+}
+
+@media (max-width:700px) {
+    nav div{
+        width: 40%;
+    }
+
+    .inputDiv, div{
+        width: 100%;
+    }
+
+    .secondNav{
+        padding: 0 10px;
+    }
+
+    .secondNav div{
+        width: 20%;
+        /* padding: 0 20px; */
+    }
+    /* .reduce{
+        right: 0;
+        background-color: red;
+    } */
+
+    .flex div{
+        width: 100%;
+    }
+
+    .secContent div img{
+        width: 35%;
+        margin: 10px;
+    }
+
+    .white button{
+        width: 65%;
+        margin: 5px 0;
+    }
+
+    .asidesDiv input, button{
+        width: 80%;
+    }
+}

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./icofont/icofont.min.css">
+    <link rel="stylesheet" href="./whogohost.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <ul>
+                <li><i class="icofont-ui-call">&nbsp;</i> <span>0700022332233</span></li>
+                <li><i class="icofont-email">&nbsp;</i> <span>support@whogohost.com</span></li>
+                <li><i class="icofont-brand-whatsapp">&nbsp;</i> <span>07068714313</span></li>
+            </ul>
+            <!-- <span><i class="icofont-ui-call"></i>&nbsp; 0700022332233</span>
+            <span><i class="icofont-email"></i> &nbsp; support@whogohost.com</span>
+            <span><i class="icofont-brand-whatsapp"></i>&nbsp; 07068714313</span> -->
+        </div>
+
+        <div class="end">
+            <span>Make Money</span>
+            <span>How to pay</span>
+
+            &#x20A6;
+            <button>
+            <i class="icofont-caret-down"></i>
+
+                <div class="dropdown">
+                    <ul>
+                        <li>- &#x20A6;</li>
+                        <li>USD - $</li>
+                        <li>Ksh - KSh</li>
+                        <li>GH&#8373; - &#8373;</li>
+                    </ul>
+                </div>
+            </button>
+
+            <!-- <button>
+                i.ic
+            </button> -->
+            <img src="data:image/jpeg;base64,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" alt="">
+                <button>
+                    <i class="icofont-caret-down"></i>
+
+                    <div class="dropdown">
+                        <ul>
+                            <li>- &#x20A6;</li>
+                            <li>USD - $</li>
+                            <li>Ksh - KSh</li>
+                            <li>GH&#8373; - &#8373;</li>
+                        </ul>
+                    </div>
+                </button>
+            
+            <button>
+                <i class="icofont-cart"></i>
+                &nbsp;
+            </button>
+            <!-- <span></span> -->
+            <button><i class="icofont-businessman"></i>&nbsp; <span>My Account</span></button>
+        </div>
+    </nav>
+
+    <div class="secondNav">
+        <div>
+            <img src="https://www.whogohost.ng/public/assets/
+            img/logo/WhogoHost-Logo--nigeria.png" alt="">
+        </div>
+
+        <div class="cont">
+            <button><span>Domain &nbsp; <i class="icofont-caret-down"></i></span>
+            <div class="dropdown2">
+                <div>
+                    <div class="thirdContent">
+
+                        <div class="chooseWhogohost">
+                            <aside>
+                                <img src="https://www.whogohost.com/public/assets/img/icons/no.1.png" alt="">
+                            </aside>
+            
+                            <aside>
+                                <h3>West Africa's No. 1 Hosting Provider</h3>
+                                <p>
+                                    We are West Africa's largest and most popular web hosting provider,
+                                     supporting businesses, 
+                                    enterprises and individuals for the past 12 years and counting.
+                                </p>
+                            </aside>
+                        </div>
+            
+                        <div class="chooseWhogohost">
+                            <aside>
+                                <img src="https://www.whogohost.com/public/assets/img/icons/no.1.png" alt="">
+                            </aside>
+            
+                            <aside>
+                                <h3>Wide Range Of Offerings</h3>
+                                <p>
+                                    With our growing number of offerings, we are your one-stop shop
+                                     for anything you and your business needs to succeed online.
+                                </p>
+                            </aside>
+                        </div>
+            
+                        <div class="chooseWhogohost">
+                            <aside>
+                                <img src="https://www.whogohost.com/public/assets/img/icons/no.1.png" alt="">
+                            </aside>
+            
+                            <aside>
+                                <h3>24/7 Customer Support</h3>
+                                <p>
+                                    Our 24/7 award-winning support team is available to handle any requests you
+                                     may have. Whatever you may need, we are just a click away.
+                                </p>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </button>
+            <span>Hosting &nbsp; <i class="icofont-caret-down"></i></span>
+            <span>Website &nbsp; <i class="icofont-caret-down"></i></span>
+            <span>Solution &nbsp; <i class="icofont-caret-down"></i></span>
+            <span>More &nbsp; <i class="icofont-caret-down"></i></span>
+
+        </div>
+
+        <div class="sideNav">
+            <button class="hold"><i class="icofont-navigation-menu"></i>
+                <div class="reduce">
+                    <!-- <h3>This is another content</h3> -->
+                    <p>
+                        <span>Hosting  </span><span><i class="icofont-caret-down"></i></span>
+                    </p>
+
+                    <p>
+                        <span>Website  </span><span><i class="icofont-caret-down"></i></span>
+                    </p>
+
+                    <p>
+                        <span>Solution  </span><span><i class="icofont-caret-down"></i></span>
+                    </p>
+
+                    <p>
+                    <span>More </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> <i class="icofont-caret-down"></i></span>
+                </p>
+                </div>
+                
+                
+            </button>
+        </div>
+
+    </div>
+
+    <div class="motherDiv">
+        <div class="firstContent">
+            <div class="inn">
+                <h2>Wordpress Websites Work Better With Wordpress Hosting</h2>
+                <p>25% Off For New Users! <a href="">Get Started</a></p>
+            </div>
+    
+            <div class="inputDiv">
+                <div>
+                    <input color="grey" type="text" placeholder="Search for a doamain name (e.g yourdomain.com">
+                    <span><i class="icofont-search"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="flex">
+            <div>
+                <h3>cPanel Hosting</h3>
+                <p>From N1,000.00/mo</p>
+                <small>Get secure and reliable hosting accounts</small>
+                <br>
+                <button>Get Started</button>
+            </div>
+
+            <div>
+                <h3>cPanel Hosting</h3>
+                <p>From N4,000.00/mo</p>
+                <small>Powered by AWS and perfect for WordPress websites</small>
+                <br>
+                <button>Get Started</button>
+            </div>
+
+            <div>
+                <h3>cPanel Hosting</h3>
+                <p>From N1,000.00/mo</p>
+                <small>Get professional emails for your business</small>
+                <br>
+                <button>Get Started</button>
+            </div>
+
+            <div>
+                <h3>cPanel Hosting</h3>
+                <p>From N3,500.00/mo</p>
+                <small>Dont know how to code? Build a website in 10 minutes</small>
+                <br>
+                <button>Get Started</button>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="flex">
+        <div>
+            <h3>cPanel Hosting</h3>
+            <p>From N1,000.00/mo</p>
+            <small>Get secure and reliable hosting accounts</small>
+            <br>
+            <button>Get Started</button>
+        </div>
+
+        <div>
+            <h3>cPanel Hosting</h3>
+            <p>From N4,000.00/mo</p>
+            <small>Powered by AWS and perfect for WordPress websites</small>
+            <br>
+            <button>Get Started</button>
+        </div>
+
+        <div>
+            <h3>cPanel Hosting</h3>
+            <p>From N1,000.00/mo</p>
+            <small>Get professional emails for your business</small>
+            <br>
+            <button>Get Started</button>
+        </div>
+
+        <div>
+            <h3>cPanel Hosting</h3>
+            <p>From N3,500.00/mo</p>
+            <small>Dont know how to code? Build a website in 10 minutes</small>
+            <br>
+            <button>Get Started</button>
+        </div>
+    </div>
+
+    <div class="secContent">
+        <div class="semiDiv">
+            <h2>We Provide Online Solutions For Businesses And Individuals</h2>
+            <div>
+                <img src="data:image/png;base64,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" alt="">
+                <img src="https://www.whogohost.ng/public/assets/img/logo/nuc-logo.png" alt="">
+                <img src="https://www.whogohost.ng/public/assets/img/logo/slot-logo.svg" alt="">
+                <img src="https://www.whogohost.ng/public/assets/img/logo/GTBank-Logo.svg" alt="">
+                <img src="data:image/png;base64,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" alt="">
+                <img src="https://www.whogohost.ng/public/assets/img/logo/dragnet.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="mainDiv">
+        <div>
+            <h2>Why Choose WhoGoHost?</h2>
+            <p>
+                Over the years, 40,000+ companies and institutions 
+                have trusted us to deliver excellent services
+            </p>
+
+        </div>
+
+        <div class="thirdContent">
+
+            <div class="chooseWhogohost">
+                <aside>
+                    <img src="https://www.whogohost.com/public/assets/img/icons/no.1.png" alt="">
+                </aside>
+
+                <aside>
+                    <h3>West Africa's No. 1 Hosting Provider</h3>
+                    <p>
+                        We are West Africa's largest and most popular web hosting provider,
+                         supporting businesses, 
+                        enterprises and individuals for the past 12 years and counting.
+                    </p>
+                </aside>
+            </div>
+
+            <div class="chooseWhogohost">
+                <aside>
+                    <img src="https://www.whogohost.com/public/assets/img/icons/no.1.png" alt="">
+                </aside>
+
+                <aside>
+                    <h3>Wide Range Of Offerings</h3>
+                    <p>
+                        With our growing number of offerings, we are your one-stop shop
+                         for anything you and your business needs to succeed online.
+                    </p>
+                </aside>
+            </div>
+
+            <div class="chooseWhogohost">
+                <aside>
+                    <img src="https://www.whogohost.com/public/assets/img/icons/no.1.png" alt="">
+                </aside>
+
+                <aside>
+                    <h3>24/7 Customer Support</h3>
+                    <p>
+                        Our 24/7 award-winning support team is available to handle any requests you
+                         may have. Whatever you may need, we are just a click away.
+                    </p>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <div class="fourthSection">
+        <div>
+            <aside>
+                <img src="./fly.PNG" alt="">
+            </aside>
+            <h1>Our Customers Love Us!</h1>
+            <p>
+                We love to help our customers succeed. To make that happen, we put our best
+                 to provide our 
+                customers with just what they need... and more. No wonder they love doing
+                 business with us.
+            </p>
+            <div>
+                <button>Read what our clients have to say</button>
+            </div>
+        </div>
+
+        <div class="randomImg">
+            <img src="https://www.whogohost.com/public/assets/img/client-mage-group.png" alt="">
+        </div>
+    </div>
+
+   <div class="white">
+     <div class="fifthSection">
+        <div>
+            <h1>Different businesses, same top class support</h1>
+        <p>Our experts are on hand to help every step of the way. They offer assistance, help with
+            website migrations and ongoing tech support by live chat, phone and ticket.</p>
+        <p><i class="icofont-ui-call">&nbsp;070022332233&nbsp; <i class="icofont-email"></i>&nbsp;support@whogohost.com</i></i></p>
+
+        <div>
+            <button>Chat with us now</button>
+            <button>Open a support ticket</button>
+        </div>
+        </div>
+
+        <div class="randomImg">
+            <img src="https://www.whogohost.com/public/assets/img/client-mage-group.png" alt="">
+        </div>
+    </div>
+   </div>
+
+   <div class="black">
+
+    <div class="insideDiv">
+
+        <div>
+            <img src="https://www.whogohost.com/public/assets/img/logo/logo-blue-white.png" alt="whogohost-logo">
+        </div>
+
+        <div class="asidesDiv">
+
+        <aside>
+            <h2>Subscribe to Our newsletter</h2>
+            <p>Get the latest information, updates and more</p>
+        </aside>
+
+        <aside>
+            <input type="text" placeholder="name@email.com">
+            <button>Subscribe</button>
+        </aside>
+        
+        </div>
+
+    </div>
+
+    <div class="lastContent">
+        <aside>
+            <p>Hosting</p>
+            <ul>
+                <li>Web Hosting</li>
+                <li>Reseller Hosting</li>
+                <li>Local Servers in Nigeria</li>
+                <li>Hosting Transfer</li>
+                <li>Cloud Hosting</li>
+                <li>Google Workspace</li>
+                <li>Microsoft 365</li>
+            </ul>
+        </aside>
+
+        <aside>
+            <p>Domain</p>
+            <ul>
+                <li>Domain Registration</li>
+                <li>Domain Transfer</li>
+                <li>Domain Reseller</li>
+            </ul>
+        </aside>
+
+        <aside>
+            <p>Service</p>
+            <ul>
+                <li>SSL Certificate</li>
+                <li>Site Builder</li>
+                <li>Web Design</li>
+                <li>Website Protection</li>
+                <li>Website Backup</li>
+                <li>Domain Reseller API</li>
+                <li>Whogohost Enterprises</li>
+            </ul>
+        </aside>
+
+        <aside>
+            <p>Comapany</p>
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Announcements</li>
+                <li>Affiliate System</li>
+                <li>Terms Of Service</li>
+                <li>Our Blog</li>
+                <li>Merger and Acquisition</li>
+            </ul>
+        </aside>
+
+        <aside>
+            <p>Support</p>
+            <ul>
+                <li>Client Login</li>
+                <li>Knowledge Base</li>
+                <li>Downloads</li>
+             
+            </ul>
+        </aside>
+
+        <aside>
+            <p>STAY CONNECTED</p>
+            <ul>
+                <button><i class="icofont-twitter"></i></button>
+                <button><i class="icofont-facebook"></i></button>
+                <button><i class="icofont-linkedin"></i></button>
+                <button><i class="icofont-youtube"></i></button>
+                <button><i class="icofont-camera"></i></button>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <div class="footer">
+                <p>© 2023 Whogohost Limited African #1 Domain and Hosting Provider.</p>
+            </div>
+            <div>
+                <span>Terms of Service</span>
+                <span>Privacy Policy</span>
+                <span>Refund Policy</span>
+            </div>
+        </div>
+    </footer>
+   </div>
+</body>
+</html>
